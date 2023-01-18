@@ -1,10 +1,19 @@
 import React from 'react'
+import Head from 'next/head'
 
-const home = () => {
+const Home = () => {
   return (
-    <div className='w-screen h-screen' > <img src='https://cdn.midjourney.com/e8f96288-eceb-45f7-b557-cdf5a5037cb9/grid_0.png'></img></div>
-    
+    <div>
+      <Head>
+        <title>My landing page</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <main>
+        <h1>Welcome to my landing page</h1>
+        <p>This is where you can learn more about my app or service.</p>
+      </main>
+    </div>
   )
 }
 
-export default home
+export default Home
